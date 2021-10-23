@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        form：表单标签
+        input：输入标签
+        type：输入的属性
+        value：部分类型的初始值
+        text：文本属性的输入
+        radio：单选属性的输入
+        checkbox：复选属性的输入
+        password：密码属性的输入
+        button：普通按钮，可以简写成为button标签对
+        submit：提交按钮
+        reset：重置按钮
+        
+        select：下拉菜单标签
+
+        textarea：多行文本框
+        
+        text
+        disabled：锁死文本框（无法修改值）
+        placeholder：灰色提示字
+        
+        radio
+        name：name值相同构成单选互斥
+        value：value中的值为向服务器提交的值（要加）
+        checked：初始默认选中的值
+        label：label标签用于绑定文字和单选按钮，在html5可以直接用label标签包裹input标签，注意不要加for属性，在html4中（html5兼容）用label标签包裹文字，和单选按钮通过id和for相连
+        
+        select
+        option：select中的内部选项
+
+        textarea
+        rows：行数
+        cols：列数
+     -->
+    <form action="" method="">
+        <p>
+            请输入你的姓名:<input type="text">
+        </p>
+        <p>
+            报考院校:<input type="text" value="清华大学" disabled>
+        </p>
+        <p>
+            毕业学校:<input type="text" placeholder="请输入真实的毕业学校">
+        </p>
+        <p>
+            性别:
+            <label>
+                <input type="radio" name="sex" value="男" checked>男
+            </label>
+                <input type="radio" name="sex" value="女" id="nv">
+                <label for="nv">女</label>
+        </p>
+        <p>
+            血型：
+            <input type="radio" name="blood" value="A" checked >A
+            <input type="radio" name="blood" value="B">B
+            <input type="radio" name="blood" value="O">O
+            <input type="radio" name="blood" value="AB">AB
+        </p>
+        <p>
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="足球">足球
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="篮球">篮球
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="羽毛球">羽毛球
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="唱歌">唱歌
+            </label>
+        </p>
+        <p>
+            请输入密码：
+            <input type="password" name="password">
+        </p>
+        <p>
+            请选择你最喜欢的编程语言
+            <select>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </p>
+        <p>
+            留言：
+            <textarea cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <!-- <input type="button" value="普通"> -->
+            <button>普通</button>
+        </p>
+        <p>
+            <input type="submit" value="提交表单">
+        </p>
+        <p>
+            <input type="reset" value="重置表单">
+        </p>
+    </form>
+</body>
+</html>
